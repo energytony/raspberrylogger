@@ -1,0 +1,79 @@
+{
+    "field":[
+       {
+            "start_registers_address": 1,
+            "name": "Voltage A",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+
+    
+        {
+            "start_registers_address": 3,
+            "name": "Voltage B",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+
+        {
+            "start_registers_address": 5,
+            "name": "Voltage C",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+
+        {
+            "start_registers_address": 7,
+            "name": "Current A",
+            "unit": "A",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+
+        {
+            "start_registers_address": 9,
+            "name": "Current B",
+            "unit": "A",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+        {
+            "start_registers_address": 11,
+            "name": "Current C",
+            "unit": "A",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+        {
+            "start_registers_address": 53,
+            "name": "Watts Sum",
+            "unit": "W",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+         {
+            "start_registers_address": 57,
+            "name": "VA Sum",
+            "unit": "va",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+         {
+            "start_registers_address": 61,
+            "name": "var Sum",
+            "unit": "var",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+        {
+            "start_registers_address": 63,
+            "name": "PF",
+            "unit": "pf",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        }      
+    ]
+}

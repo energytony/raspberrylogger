@@ -1,0 +1,12 @@
+{
+        "slave_address": 1,
+        "setting": {
+            "baudrate": "19200",
+            "parity": "E",
+            "stopbits": 1,
+            "bytesize": 8,
+            "timeout": 0.5
+        },
+        "name": "China",
+        "enable": "true"
+}

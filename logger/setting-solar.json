@@ -1,0 +1,34 @@
+{
+    "field":[
+       {
+            "start_registers_address": 256,
+            "name": "Battery Capacity",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+
+        {
+            "start_registers_address": 257,
+            "name": "Battery Voltage",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+        {
+            "start_registers_address": 258,
+            "name": "Charge Current",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+           {
+            "start_registers_address": 259,
+            "name": "Temp",
+            "unit": "C",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        }
+
+    ]
+}

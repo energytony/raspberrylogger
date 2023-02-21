@@ -1,0 +1,124 @@
+{
+    "field":[
+       {
+            "start_registers_address": 0,
+            "name": "Voltage A",
+            "unit": "V",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+
+    
+        {
+            "start_registers_address": 16,
+            "name": "Voltage B",
+            "unit": "V",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+
+        {
+            "start_registers_address": 32,
+            "name": "Voltage C",
+            "unit": "V",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+
+        {
+            "start_registers_address": 2,
+            "name": "Current A",
+            "unit": "A",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+
+        {
+            "start_registers_address": 18,
+            "name": "Current B",
+            "unit": "A",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+        {
+            "start_registers_address": 34,
+            "name": "Current C",
+            "unit": "A",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+        {
+            "start_registers_address": 12,
+            "name": "PF A",
+            "unit": "pf",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+         {
+            "start_registers_address": 28,
+            "name": "PF B",
+            "unit": "pf",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+         {
+            "start_registers_address": 44,
+            "name": "PF C",
+            "unit": "pf",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+       {
+            "start_registers_address": 10,
+            "name": "L1 KVA",
+            "unit": "KVA",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+           {
+            "start_registers_address": 26,
+            "name": "L2 KVA",
+            "unit": "KVA",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+           {
+            "start_registers_address": 42,
+            "name": "L3 KVA",
+           "unit": "KVA",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+        {
+            "start_registers_address": 4,
+            "name": "L1 KW",
+            "unit": "KW",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+         {
+            "start_registers_address": 20,
+            "name": "L2 KW",
+            "unit": "KW",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+         {
+            "start_registers_address": 36,
+            "name": "L3 KW",
+            "unit": "KW",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+        {
+            "start_registers_address": 220,
+            "name": "KWH",
+            "unit": "kwh",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        }
+ 
+         
+
+    ]
+}

@@ -1,0 +1,221 @@
+{
+    "field":[
+       {
+            "start_registers_address": 3027,
+            "name": "Voltage A",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+
+    
+        {
+            "start_registers_address": 3029,
+            "name": "Voltage B",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+
+        {
+            "start_registers_address": 3031,
+            "name": "Voltage C",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+
+        {
+            "start_registers_address": 2999,
+            "name": "Current A",
+            "unit": "A",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+
+        {
+            "start_registers_address": 3001,
+            "name": "Current B",
+            "unit": "A",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+        {
+            "start_registers_address": 3003,
+            "name": "Current C",
+            "unit": "A",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+        {
+            "start_registers_address": 3053,
+            "name": "Active Power A",
+            "unit": "kw",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+         {
+            "start_registers_address": 3055,
+            "name": "Active Power B",
+            "unit": "kw",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+         {
+            "start_registers_address": 3057,
+            "name": "Active Power C",
+            "unit": "kw",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+        {
+            "start_registers_address": 3069,
+            "name": "Apparent Power A",
+            "unit": "kVA",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+        {
+            "start_registers_address": 3071,
+            "name": "Apparent Power B",
+            "unit": "kVA",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+        {
+            "start_registers_address": 3073,
+            "name": "Apparent Power C",
+            "unit": "kVA",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+           
+       {
+            "start_registers_address": 22887,
+            "name": "V1 H3",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+        {
+            "start_registers_address": 22899,
+            "name": "V1 H5",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+         {
+            "start_registers_address": 22911,
+            "name": "V1 H7",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+         {
+            "start_registers_address": 23275,
+            "name": "V2 H3",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+        {
+            "start_registers_address": 23287,
+            "name": "V2 H5",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+         {
+            "start_registers_address": 23299,
+            "name": "V2 H7",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+         {
+            "start_registers_address": 23663,
+            "name": "V3 H3",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+        {
+            "start_registers_address": 23675,
+            "name": "V3 H5",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+         {
+            "start_registers_address": 23687,
+            "name": "V3 H7",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+        {
+            "start_registers_address": 24439,
+            "name": "A H3",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+        {
+            "start_registers_address": 24451,
+            "name": "A H5",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+         {
+            "start_registers_address": 24463,
+            "name": "A H7",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+         {
+            "start_registers_address": 24827,
+            "name": "B H3",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+        {
+            "start_registers_address": 24839,
+            "name": "B H5",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+         {
+            "start_registers_address": 24851,
+            "name": "B H7",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+         {
+            "start_registers_address": 25215,
+            "name": "C H3",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+        {
+            "start_registers_address": 25227,
+            "name": "C H5",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+         {
+            "start_registers_address": 25239,
+            "name": "C H7",
+            "unit": "%",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        }
+
+    ]
+}

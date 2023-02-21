@@ -1,0 +1,38 @@
+{
+    "field":[
+       {
+            "start_registers_address": 0,
+            "name": "Voltage A",
+            "unit": "V",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+
+    
+        {
+            "start_registers_address": 7,
+            "name": "Current A ",
+            "unit": "A",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+
+        {
+            "start_registers_address": 13,
+            "name": "KW",
+            "unit": "kw",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+
+        {
+            "start_registers_address": 19,
+            "name": "KVA",
+            "unit": "VA",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        }
+
+        
+    ]
+}

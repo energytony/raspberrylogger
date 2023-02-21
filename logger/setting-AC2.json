@@ -1,0 +1,75 @@
+{
+    "field":[
+       {
+            "start_registers_address": 16386,
+            "name": "Voltage A",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+
+    
+        {
+            "start_registers_address": 16388,
+            "name": "Voltage B",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+
+        {
+            "start_registers_address": 16390,
+            "name": "Voltage C",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+
+        {
+            "start_registers_address": 16402,
+            "name": "Current A",
+            "unit": "A",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+
+        {
+            "start_registers_address": 16404,
+            "name": "Current B",
+            "unit": "A",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+        {
+            "start_registers_address": 16406,
+            "name": "Current C",
+            "unit": "A",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+        {
+            "start_registers_address": 16436,
+            "name": "PF A",
+            "unit": "pf",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+         {
+            "start_registers_address": 16438,
+            "name": "PF B",
+            "unit": "pf",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+        {
+            "start_registers_address": 16440,
+            "name": "PF C",
+            "unit": "pf",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        }
+        
+         
+         
+    ]
+}

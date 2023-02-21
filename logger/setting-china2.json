@@ -1,0 +1,82 @@
+{
+    "field":[
+       {
+            "start_registers_address": 0,
+            "name": "Voltage A",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+
+    
+        {
+            "start_registers_address": 2,
+            "name": "Voltage B",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+
+        {
+            "start_registers_address": 4,
+            "name": "Voltage C",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+
+        {
+            "start_registers_address": 6,
+            "name": "Current A",
+            "unit": "A",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+
+        {
+            "start_registers_address": 8,
+            "name": "Current B",
+            "unit": "A",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+        {
+            "start_registers_address": 10,
+            "name": "Current C",
+            "unit": "A",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+        {
+            "start_registers_address": 30,
+            "name": "PF A",
+            "unit": "pf",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+         {
+            "start_registers_address": 32,
+            "name": "PF B",
+            "unit": "pf",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+        {
+            "start_registers_address": 34,
+            "name": "PF C",
+            "unit": "pf",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+         {
+            "start_registers_address": 72,
+            "name": "KHW",
+            "unit": "kwh",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        }
+        
+         
+         
+    ]
+}
