@@ -24,14 +24,12 @@ def DeviceFileCheck(fn):
     global device_data
 
     try:
-    	
-    	with open(fn) as json_file:
-    		device_data = json.load(json_file)
-    		
-    	return 1
+            with open(fn) as json_file:
+                device_data = json.load(json_file)
+                return 1
     except IOError:
-    	print ("Error: Device Json does not appear to exist.")
-    	return 0
+            print ("Error: Device Json does not appear to exist.")
+            return 0
 
 def SettingFileCheck(fn):
 	global setting_data
@@ -57,33 +55,46 @@ def myconverter(o):
 			
 @tl.job(interval=timedelta(seconds=15))
 def sample_job_every_15s():
-    data= {}
+    max_retries = 3  # maximum number of retries
+    retry_delay = 2  # delay in seconds before retrying
 
-    print("15s job current time : {}".format(time.ctime()))
+    try:
+        data = {}
 
-    for d in range(len(device_data["device"])):
-	    data['slavid_id'] = device_data["device"][d]['slave_address']
-	    data['lora_id'] = device_data["device"][d]['slave_address']
-	    data['iot_host'] = iot_host
-	    data['time'] = datetime.datetime.utcnow()
+        print("15s job current time : {}".format(time.ctime()))
 
-	    for i in range(len(setting_data["field"])):
-	    	fieldname = setting_data["field"][i]["name"]
-	    	datatype = setting_data["field"][i]["type_of_value"]
-	    	value = instrument[d].read_long(setting_data["field"][i]["start_registers_address"], functioncode=3, signed=True, byteorder=0)
-	    	#value = instrument[d].read_float(registeraddress=setting_data["field"][i]["start_registers_address"],functioncode=3,number_of_registers=2)
-	    	data[fieldname] = value
-	    	
+        for d in range(len(device_data["device"])):
+            time.sleep(30)
+            data['slave_id'] = device_data["device"][d]['slave_address']
+            data['lora_id'] = device_data["device"][d]['slave_address']
+            data['iot_host'] = iot_host
+            data['time'] = datetime.datetime.utcnow()
 
-	    print(data)
-	    json_input = json.dumps(data ,default = myconverter)
-	    redis_instance.lpush(redis_key, json_input)
+            for i in range(len(setting_data["field"])):
+                retries = 0
+                while retries < max_retries:
+                    try:
+                        fieldname = setting_data["field"][i]["name"]
+                        datatype = setting_data["field"][i]["type_of_value"]
+                        value = instrument[d].read_long(setting_data["field"][i]["start_registers_address"], functioncode=3, signed=True, byteorder=0)
+                        # Alternatively: value = instrument[d].read_float(registeraddress=setting_data["field"][i]["start_registers_address"], functioncode=3, number_of_registers=2)
+                    except Exception as e:
+                        print("[!] Communication error, retrying: ", e)
+                        time.sleep(retry_delay)
+                        retries += 1
+                    else:
+                        data[fieldname] = value
+                        break
 
-    
+            if retries < max_retries:
+                print(data)
+                json_input = json.dumps(data, default=myconverter)
+                redis_instance.lpush(redis_key, json_input)
+            else:
+                print("Failed to read data after retries")
 
-
-
-
+    except Exception as e:
+        print("Read error: ", e)
 
 
 
@@ -93,7 +104,8 @@ if __name__ == "__main__":
 	#result = SettingFileCheck("setting-ex.json")
 	#result = SettingFileCheck("setting.json")
 	#result = SettingFileCheck("setting-china.json")
-	result = SettingFileCheck("setting-C10.json")
+	#result = SettingFileCheck("setting-C10.json")
+	result = SettingFileCheck("setting-C10spec.json")
 	#result = SettingFileCheck("setting-CVMK2.json")
 	#result = SettingFileCheck("setting-AC2.json")
 	#result = SettingFileCheck("setting-PM5000.json")

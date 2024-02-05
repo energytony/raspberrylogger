@@ -3,28 +3,27 @@
          {
             "slave_address": 1,
             "setting": {
-                "baudrate": "19200",
+                "baudrate": "9600",
                 "parity": "E",
                 "stopbits": 1,
                 "bytesize": 8,
                 "timeout": 0.5
             },
-            "name": "motor1",
+            "name": "cvm-c10",
             "enable": "true"
         },
         {
-            "slave_address": 2,
+            "slave_address": 3,
             "setting": {
-                "baudrate": "19200",
+                "baudrate": "9600",
                 "parity": "E",
                 "stopbits": 1,
                 "bytesize": 8,
                 "timeout": 0.5
             },
-            "name": "motor2",
+            "name": "cvm",
             "enable": "true"
         }
-        
-    ]       
-       
+    ]
+
 }

@@ -9,21 +9,7 @@
         },
 
     
-        {
-            "start_registers_address": 16,
-            "name": "Voltage B",
-            "unit": "V",
-            "type_of_value": "INT32",
-            "number_of_decimals": 1
-        },
-
-        {
-            "start_registers_address": 32,
-            "name": "Voltage C",
-            "unit": "V",
-            "type_of_value": "INT32",
-            "number_of_decimals": 1
-        },
+      
 
         {
             "start_registers_address": 2,
@@ -116,15 +102,8 @@
             "unit": "kwh",
             "type_of_value": "INT32",
             "number_of_decimals": 1
-        },
-        {
-            "start_registers_address": 240,
-            "name": "GKWH",
-            "unit": "kwh",
-            "type_of_value": "INT32",
-            "number_of_decimals": 1
         }
-          
+        
          
 
     ]

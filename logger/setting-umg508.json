@@ -1,7 +1,7 @@
 {
     "field":[
        {
-            "start_registers_address": 0,
+            "start_registers_address": 19000,
             "name": "Voltage A",
             "unit": "V",
             "type_of_value": "INT32",
@@ -10,7 +10,7 @@
 
     
         {
-            "start_registers_address": 16,
+            "start_registers_address": 19002,
             "name": "Voltage B",
             "unit": "V",
             "type_of_value": "INT32",
@@ -18,7 +18,7 @@
         },
 
         {
-            "start_registers_address": 32,
+            "start_registers_address": 19004,
             "name": "Voltage C",
             "unit": "V",
             "type_of_value": "INT32",
@@ -26,7 +26,7 @@
         },
 
         {
-            "start_registers_address": 2,
+            "start_registers_address": 19012,
             "name": "Current A",
             "unit": "A",
             "type_of_value": "INT32",
@@ -34,96 +34,91 @@
         },
 
         {
-            "start_registers_address": 18,
+            "start_registers_address": 19014,
             "name": "Current B",
             "unit": "A",
             "type_of_value": "INT32",
             "number_of_decimals": 1
         },
         {
-            "start_registers_address": 34,
+            "start_registers_address": 19016,
             "name": "Current C",
             "unit": "A",
             "type_of_value": "INT32",
             "number_of_decimals": 1
         },
         {
-            "start_registers_address": 12,
+            "start_registers_address": 19044,
             "name": "PF A",
             "unit": "pf",
             "type_of_value": "INT32",
             "number_of_decimals": 1
         },
          {
-            "start_registers_address": 28,
+            "start_registers_address": 19046,
             "name": "PF B",
             "unit": "pf",
             "type_of_value": "INT32",
             "number_of_decimals": 1
         },
          {
-            "start_registers_address": 44,
+            "start_registers_address": 19048,
             "name": "PF C",
             "unit": "pf",
             "type_of_value": "INT32",
             "number_of_decimals": 1
         },
        {
-            "start_registers_address": 10,
+            "start_registers_address": 19028,
             "name": "L1 KVA",
             "unit": "KVA",
             "type_of_value": "INT32",
             "number_of_decimals": 1
         },
            {
-            "start_registers_address": 26,
+            "start_registers_address": 19030,
             "name": "L2 KVA",
             "unit": "KVA",
             "type_of_value": "INT32",
             "number_of_decimals": 1
         },
            {
-            "start_registers_address": 42,
+            "start_registers_address": 19032,
             "name": "L3 KVA",
            "unit": "KVA",
             "type_of_value": "INT32",
             "number_of_decimals": 1
         },
         {
-            "start_registers_address": 4,
+            "start_registers_address": 19020,
             "name": "L1 KW",
             "unit": "KW",
             "type_of_value": "INT32",
             "number_of_decimals": 1
         },
          {
-            "start_registers_address": 20,
+            "start_registers_address": 19022,
             "name": "L2 KW",
             "unit": "KW",
             "type_of_value": "INT32",
             "number_of_decimals": 1
         },
          {
-            "start_registers_address": 36,
+            "start_registers_address": 19024,
             "name": "L3 KW",
             "unit": "KW",
             "type_of_value": "INT32",
             "number_of_decimals": 1
         },
          {
-            "start_registers_address": 220,
+            "start_registers_address": 19060,
             "name": "KWH",
             "unit": "kwh",
             "type_of_value": "INT32",
             "number_of_decimals": 1
-        },
-        {
-            "start_registers_address": 240,
-            "name": "GKWH",
-            "unit": "kwh",
-            "type_of_value": "INT32",
-            "number_of_decimals": 1
         }
+
+       
           
          
 

@@ -22,10 +22,140 @@
             "type_of_value": "FLOAT32",
             "number_of_decimals": 0
         },
-           {
+        {
             "start_registers_address": 259,
             "name": "Temp",
             "unit": "C",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+
+         {
+            "start_registers_address": 260,
+            "name": "Load_V",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+         {
+            "start_registers_address": 261,
+            "name": "Load_A",
+            "unit": "A",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+          {
+            "start_registers_address": 262,
+            "name": "Load_W",
+            "unit": "W",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+           {
+            "start_registers_address": 263,
+            "name": "Solar_V",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+           {
+            "start_registers_address": 264,
+            "name": "Solar_A",
+            "unit": "A",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+
+         {
+            "start_registers_address": 265,
+            "name": "Solar_W",
+            "unit": "W",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+        {
+            "start_registers_address": 267,
+            "name": "Day_Max_V",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+         {
+            "start_registers_address": 268,
+            "name": "Day_Min_V",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+
+        {
+            "start_registers_address": 269,
+            "name": "Day_Max_A",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+
+          {
+            "start_registers_address": 270,
+            "name": "Day_Min_A",
+            "unit": "V",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+          {
+            "start_registers_address": 271,
+            "name": "Day_Max_W",
+            "unit": "W",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+
+           {
+            "start_registers_address": 272,
+            "name": "Day_Min_W",
+            "unit": "W",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+
+             {
+            "start_registers_address": 273,
+            "name": "Day_Charge_AH",
+            "unit": "AH",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+
+             {
+            "start_registers_address": 274,
+            "name": "Day_Discharge_AH",
+            "unit": "AH",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+
+            {
+            "start_registers_address": 275,
+            "name": "Day_Gen_W",
+            "unit": "W",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+
+
+        {
+            "start_registers_address": 276,
+            "name": "Day_Used_W",
+            "unit": "W",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 0
+        },
+
+          {
+            "start_registers_address": 266,
+            "name": "Load_Status",
+            "unit": "S",
             "type_of_value": "FLOAT32",
             "number_of_decimals": 0
         }

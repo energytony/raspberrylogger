@@ -7,6 +7,6 @@
             "bytesize": 8,
             "timeout": 0.5
         },
-        "name": "CVM-C10",
+        "name": "TUF",
         "enable": "true"
 }

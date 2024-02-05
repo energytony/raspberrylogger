@@ -1,0 +1,103 @@
+{
+    "field":[
+       {
+            "start_registers_address": 19000,
+            "name": "Voltage A",
+            "unit": "V",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+
+    
+        {
+            "start_registers_address": 19002,
+            "name": "Voltage B",
+            "unit": "V",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+
+        {
+            "start_registers_address": 19004,
+            "name": "Voltage C",
+            "unit": "V",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+
+        {
+            "start_registers_address": 19012,
+            "name": "Current A",
+            "unit": "A",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+
+        {
+            "start_registers_address": 19014,
+            "name": "Current B",
+            "unit": "A",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+        {
+            "start_registers_address": 19016,
+            "name": "Current C",
+            "unit": "A",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+         {
+            "start_registers_address": 19020,
+            "name": "Active Power A",
+            "unit": "kw",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+         {
+            "start_registers_address": 19022,
+            "name": "Active Power B",
+            "unit": "kw",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+         {
+            "start_registers_address": 19024,
+            "name": "Active Power C",
+            "unit": "kw",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 1
+        },
+        {
+            "start_registers_address": 19028,
+            "name": "Apparent Power A",
+            "unit": "kVA",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+        {
+            "start_registers_address": 19030,
+            "name": "Apparent Power B",
+            "unit": "kVA",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+        {
+            "start_registers_address": 19032,
+            "name": "Apparent Power C",
+            "unit": "kVA",
+            "type_of_value": "FLOAT32",
+            "number_of_decimals": 2
+        },
+        {
+            "start_registers_address": 19060,
+            "name": "KWH",
+            "unit": "kwh",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        }
+ 
+         
+
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "field":[
+       {
+            "start_registers_address": 1,
+            "name": "Instant Flow",
+            "unit": "m/h",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+
+    
+        {
+            "start_registers_address": 5,
+            "name": "Flow Speed",
+            "unit": "m/s",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+
+        {
+            "start_registers_address": 33,
+            "name": "T1",
+            "unit": "C",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        },
+
+        {
+            "start_registers_address": 35,
+            "name": "T2",
+            "unit": "C",
+            "type_of_value": "INT32",
+            "number_of_decimals": 1
+        
+        
+        }
+    ]
+}

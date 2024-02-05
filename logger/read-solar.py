@@ -52,11 +52,25 @@ def myconverter(o):
         return o.isoformat()
 
 
+def write_setting():
+    print(" testing to write...57373")
+    try:
+        instrument.write_register(57373, 15, 0, functioncode=6)
+    except IOError:
+        print ('[no response]')
+    except ValueError:
+        print ('[wrong response]')
+    else:
+        print ('[OK]')
+
+    value = instrument.read_register(266,functioncode=3,number_of_decimals=0,signed=True)    
+    print (value)
+
 @tl.job(interval=timedelta(seconds=15))
 def sample_job_every_15s():
     data = {}
     flag = 0
-    print("45s job current time : {}".format(time.ctime()))
+    print("15s job current time : {}".format(time.ctime()))
     # print(time.strftime("%H:%M:%S", time.localtime()))
     # address=0
     # voltage_phase = instrument.read_long(address, functioncode=3, signed=True, byteorder=0)
@@ -71,56 +85,65 @@ def sample_job_every_15s():
         datatype = setting_data["field"][i]["type_of_value"]
         
         try:
-            
             #value = instrument.read_long(setting_data["field"][i]["start_registers_address"], functioncode=3,signed=True, byteorder=0)
-            value = instrument.read_float(registeraddress=setting_data["field"][i]["start_registers_address"],functioncode=3,number_of_registers=2)
-            #value = instrument.read_register(registeraddress=setting_data["field"][i]["start_registers_address"],functioncode=3,number_of_decimals=0,signed=True)
-            #value = instrument.read_registers(registeraddress=setting_data["field"][i]["start_registers_address"],functioncode=3,number_of_registers=2)
-            value = str(round(value, 2))
+            #value = instrument.read_float(registeraddress=setting_data["field"][i]["start_registers_address"],functioncode=4,number_of_registers=2)
+            value = instrument.read_register(registeraddress=setting_data["field"][i]["start_registers_address"],functioncode=3,number_of_decimals=0,signed=True)
+            if (setting_data["field"][i]["start_registers_address"] == 259):
+                temp_value = hex(value)[2:]
+                #print(temp_value)
+                high = temp_value[:2]
+                low  = temp_value[2:]
+
+                #print(int(high, 16))
+                #print(int(low, 16))
+            else:
+                value = str(round(value, 2))
         # data[fieldname] = value
         except Exception as e:
             print("[!] Exception occurred: ", e)
             flag = 1
         else:
-            data[fieldname] = float(value)
-            flag = 0
+            if (setting_data["field"][i]["start_registers_address"] == 259):
+                data["high_temp"] = float(int(high, 16))
+                data["low_temp"] = float(int(low, 16))
+                flag = 0
+            else:
+                data[fieldname] = float(value)
+                flag = 0
+
+
 
     if (flag == 0):
         print(data)
+        #print("next")
         json_input = json.dumps(data, default=myconverter)
         redis_instance.lpush(redis_key, json_input)
 
 
 if __name__ == "__main__":
-    #result = DeviceFileCheck("device-flow.json")
-    #result = DeviceFileCheck("device-solar.json")
-    result = DeviceFileCheck("device.json")
+    #result = DeviceFileCheck("device.json")
+    result = DeviceFileCheck("device-solar.json")
+
     #result = SettingFileCheck("setting.json")
     #result = SettingFileCheck("setting-china.json")
-    #result = SettingFileCheck("setting-westbill.json")
     #result = SettingFileCheck("setting-C10.json")
     #result = SettingFileCheck("setting-CVMK2.json")
     # result = SettingFileCheck("setting-AC2.json")
-    #result = SettingFileCheck("setting-PM5000.json")
+    # result = SettingFileCheck("setting-PM5000.json")
     # result = SettingFileCheck("setting-C1000.json")
-    #result = SettingFileCheck("setting-solar.json")
+    result = SettingFileCheck("setting-solar.json")
     #result = SettingFileCheck("setting-china2.json")
-    # result = SettingFileCheck("setting-flow.json")
-    #result = SettingFileCheck("setting-umg96s.json")
-    result = SettingFileCheck("setting-umg508.json")
 
     time.sleep(1)
     if (result):
         instrument = minimalmodbus.Instrument('/dev/ttyUSB0', device_data['slave_address'])
         instrument.serial.baudrate = device_data['setting']['baudrate']
         instrument.serial.bytesize = device_data['setting']['bytesize']
-        instrument.serial.parity = serial.PARITY_NONE
-        
-        #instrument.serial.parity = device_data['setting']['parity']
+        instrument.serial.parity = device_data['setting']['parity']
         instrument.serial.stopbits = device_data['setting']['stopbits']
         instrument.serial.timeout = device_data['setting']['timeout']
-        
         # print(len(device_data))
         print(instrument)
+        #write_setting()
         tl.start(block=True)
 
